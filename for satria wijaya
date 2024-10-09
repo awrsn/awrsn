@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR SATRIA WIJAYA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            perspective: 1000px; /* Mengatur perspektif untuk efek 3D */
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transform: rotateY(10deg); /* Memutar sedikit untuk efek 3D */
+        }
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background-color: #3700b3;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>hallowww</h1>
+        <p id="message">btw, ini aku yg kemaren confess /p>
+        <button onclick="imjustgirl()">❤</button>
+    </div>
+
+    <script>
+        function confess() {
+            const messages = [
+                "gimana hari ini? ada yg nyakitin km ngga? ",
+                "semoga ngga ya. tp kalo ada, bilang aja ke aku. bakal ku tampol tu orang",
+                "jangan bosen baca pesan dariku ya. meski aku ga ngechat km secara langsung, bukan berarti aku takut atau malu. hanya saja aku belum siap nerima kenyataan di antara kamu bakal jauhin aku atau justru sebaliknya",
+                "kamu tau ga? u're my first experience. meski kita ngga deket tp aku pertama kalinya bisa seniat ini suka sm org haha", 
+                "jangan suruh aku stop kirim pesan ke kamu yaa:(( "
+            ];
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            const message = messages[randomIndex];
+            document.getElementById('message').innerText = message;
+        }
+    </script>
+</body>
+</html>
